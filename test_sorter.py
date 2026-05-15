@@ -14,3 +14,8 @@ def test_reverse():
 
 def test_duplicates():
     assert sort_numbers([3, 1, 2, 1]) == [1, 1, 2, 3]
+
+def test_returns_same_list():
+    original = [3, 1, 2]
+    result = sort_numbers(original)
+    assert result is original  # must return the exact same list object — not a new one
