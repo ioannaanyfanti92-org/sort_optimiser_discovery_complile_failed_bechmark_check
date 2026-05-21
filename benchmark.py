@@ -1,3 +1,5 @@
+ raise RuntimeError("intentional benchmark failure")
+
 import time
 import json
 import random
